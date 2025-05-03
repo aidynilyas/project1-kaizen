@@ -15,7 +15,7 @@ function applyterraform() {
 }
 
 function update_ip() {
-    terraform output -raw ec2 > ../ansible/hosts
+    terraform output -raw web_instance_public_ip > ../ansible/hosts
 }
 
 function applyansible() { 
